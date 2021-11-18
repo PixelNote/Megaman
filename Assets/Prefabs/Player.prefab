@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5482357789907596667}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.915, y: 0.076, z: 0.00000500679}
+  m_LocalPosition: {x: 0.915, y: 0.076, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7642276957287910906}
@@ -130,10 +130,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 2
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 3
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -177,12 +177,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 989fda468f8db6d46ab71374b27d96c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpSpeed: 18
+  jumpSpeed: 30
+  jumpSpeed2: 20
+  dashSpeed: 15
   speed: 10
   fireDelay: 0.5
+  dashDelay: 1
   bullet: {fileID: 2555310949971726604, guid: 8a3dce6e74eb247478deaeb54dcd8417, type: 3}
   fire: {fileID: 9108508097792346707}
   pies: {fileID: 0}
+  vfx_death: {fileID: 4047887736883792347, guid: 6d1d669e8c7adc04bb8b2e116d703880, type: 3}
+  EndScreen: {fileID: 0}
+  deathClip: {fileID: 8300000, guid: b57106bc02f126f4b84bd4e55efaadb8, type: 3}
+  jumpClip: {fileID: 8300000, guid: 71a5457029338b64ea571e924788424a, type: 3}
+  landClip: {fileID: 8300000, guid: cadde49681312ed4f99a233106554ce4, type: 3}
+  shootClip: {fileID: 8300000, guid: 6f0d20d053063d14a9a524d9c79092d8, type: 3}
+  dashClip: {fileID: 8300000, guid: 45da286bc893bcd47820ff982bfcec6b, type: 3}
 --- !u!95 &1529764844
 Animator:
   serializedVersion: 3

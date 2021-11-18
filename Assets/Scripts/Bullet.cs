@@ -17,7 +17,7 @@ public class Bullet : MonoBehaviour
     {
         myRb = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
-
+        myRb.velocity = transform.right * speed;
 
 
     }
@@ -25,13 +25,14 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        myRb.velocity = transform.right * speed;
     }
 
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
        myAnimator.SetTrigger("isDestroyed");
+       myRb.isKinematic = true;
+       myRb.Sleep();
     }
 
 

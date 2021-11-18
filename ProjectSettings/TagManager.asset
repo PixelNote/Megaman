@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Bullet
   - Foreground
+  - Enemy
+  - BulletEnemy
   layers:
   - Default
   - TransparentFX
@@ -17,9 +19,9 @@ TagManager:
   - Bullet
   - Player
   - Limits
-  - 
-  - 
-  - 
+  - Enemy
+  - Background
+  - Bullet2
   - 
   - 
   - 
@@ -51,4 +53,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 235366903
+    locked: 0
+  - name: Enemy
+    uniqueID: 2100432307
     locked: 0
